@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+        /* Bootstrap/CSS */
+        .map-image img {
+            margin-top: 50px; 
+            margin-left: -5%;
+            transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+            border: 2px solid transparent;
+        }
+        .map-image img:hover {
+            transform: scale(1.02);
+            border-color: #fd746c;
+        }
+        .lets-talk {
+            color: #fd746c !important; 
+        }
+        .submit-btn{
+            background-color: #fd746c;
+            border-color: #fd746c;
+        }
+        .submit-btn:hover{
+            background-color: darkorange;
+            border-color: darkorange;
+        }
+        .back-to-home-btn{
+            background-color: #6c757d; 
+            border-color: #6c757d; 
+            color: #fff; 
+        }
+        .back-to-home-btn:hover {
+            background-color: #495057; 
+            border-color: #495057; 
+        }
+    </style>
+</head>
+<body>
+    <section class="py-5">
+        <div class="container-fluid p-lg-0">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-6">
+                    <div class="col-lg-8 mx-auto">
+                        <span class="text-muted lets-talk">Let's Talk</span> 
+                        <h2 class="display-5 fw-bold">Contact Us</h2>
+                        <p class="lead">Have a question, feedback, or just want to say hello? We'd love to hear from you! Our team is here to assist you with any inquiries you may have. Whether it's about our products, services, partnerships, or anything else, we're committed to providing you with prompt and helpful support.</p>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <input class="form-control bg-light" placeholder="Your name" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <input class="form-control bg-light" placeholder="Your email" type="text">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <textarea class="form-control bg-light" placeholder="Your message" rows="4"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="d-grid">
+                                        <button class="btn btn-primary submit-btn" type="submit">Send message</button>
+                                        <div class="mt-3">
+                                            <a href="/Portfolio/index.html" class="btn btn-secondary">Back to Home</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mt-5 mt-lg-0 map-image"><img alt="" class="img-fluid" src="/Portfolio/image.png" height="auto"></div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

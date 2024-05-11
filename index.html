@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Portfolio</title> 
+             <!--CSS/BOOSTRAP-->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+                <style>
+                    .custom-span {
+                        color: #fd746c !important; 
+                    }
+                    .custom-body {
+                        font-family: sans-serif;
+                        color: #777777;
+                        line-height: 30px;
+                        margin-left: 6%;
+                        margin-right: 6%;
+                        margin-top: 4%;
+                        padding-top: 0px;
+                    }
+                    .custom-container {
+                        margin: 20px;      
+                    }
+                    .custom-content {
+                        width: 50%;
+                        float: left;
+                        margin-bottom: 20px;
+                        text-align: justify;
+                    }
+                    .custom-image-container {
+                        text-align: right;     
+                    }
+                    .custom-image-container img{
+                        max-width: 100%;
+                        height: auto;
+                        margin-right: 100px; 
+                        border-radius: 50px;
+                        margin-top: 10px;
+                        transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+                        border: 2px solid transparent;
+                    }
+                    .custom-image-container img:hover {
+                            transform: scale(1.02);
+                            border-color: #fd746c;
+                    }
+                    .btn {
+                        color: white;
+                        background-color: #fd746c;
+                        border-color: rgb(0, 0, 0);
+                        padding: 13px 42px;
+                        border-radius: 50px;
+                        text-decoration: none;
+                    }
+                    .custom-about {
+                        text-align: center;
+                    }
+                    .custom-introduction {
+                        margin-top: -5px;   
+                    }
+                    .custom-content2 {
+                        width: 50%;
+                        float: right;
+                        margin-top: 250px;
+                        text-align: justify;
+                    }
+                    .custom-image-container2 {
+                        text-align: left;     
+                    }
+                    .custom-image-container2 img {
+                        max-width: 100%;
+                        height: auto;
+                        margin-left: 80px; 
+                        border-radius: 50px;
+                        margin-top: 10px;
+                        transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+                        border: 2px solid transparent;
+                    }
+                    .custom-image-container2 img:hover {
+                        transform: scale(1.02);
+                        border-color: #fd746c;
+                    }
+                    .custom-title {
+                        text-align: center;
+                    }
+                    .custom-tech {
+                        color: #fd746c; 
+                        text-align: center;
+                        margin-top: 28%;
+                        
+                    }
+                    .custom-languages {
+                        text-align: center;
+                        margin-top: -5px;
+                    }
+                    .custom-switch{
+                        padding-top: 8px;
+                    }
+                    body.dark-mode{
+                        background-color: #333;
+                        color: #fff;
+                    }
+                    body.dark-mode .navbar-nav .nav-link,
+                    body.dark-mode .navbar-brand,
+                    body.dark-mode .text-muted a,
+                    body.dark-mode .text-muted h6,
+                    body.dark-mode .text-muted p {
+                        color: #fff !important;
+                    }
+                    body.dark-mode .footer-link {
+                        color: #fff !important;
+                    }
+                    body.dark-mode .text-muted {
+                        color: #fff !important;
+                    }
+           
+
+                    @keyframes typing {
+                        from { width: 0; }
+                        to { width: 100%; }
+                    }
+                    .custom-text h4 {
+                        overflow: hidden; 
+                        white-space: nowrap; 
+                        animation: typing 3s steps(40, end) infinite; 
+                    }
+                    .custom-text h4::after {
+                        content: "";
+                        display: inline-block;
+                        width: 0;
+                        height: 1.2em; 
+                        vertical-align: bottom;
+                        border-bottom: 2px solid orange; 
+                        animation: blink-caret 1s infinite; 
+                    }
+                    @keyframes blink-caret {
+                        from, to { border-color: transparent; }
+                        50% { border-color: orange; }
+                    }
+                    .center {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 50%;
+                    }
+                    html {
+                        scroll-behavior: smooth;
+                    }
+
+                    
+
+
+                </style>
+        <!--HTML-->
+        </head>
+        <body class="custom-body dark-mode">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/Portfolio/index.html">Jajangmyeon</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about"> About </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#info"> Information </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skills"> Skills </a>
+                            </li>
+                           
+                            <li class="nav-item custom-switch">
+                                <div class="form-check form-switch">
+                                    <input class="form-check-input" type="checkbox" id="darkModeSwitch">
+                                    <label class="form-check-label" for="darkModeSwitch">Light Mode</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav> <br>
+           <!--<img src="Fire.gif" width="100%" height="auto">--> 
+        
+        <section id="about" class="custom-container">
+        <div class="custom-content">
+            <div class="custom-text">
+                <h4> Hi! I'm <span class="custom-span"> Gen Exus Vergara </span> </h4>
+            </div>
+            <h5>I'm currently a 3rd year College Student. I'm self-learning to become a successful Programmer/Web/Game Dev in the future.</h5> <br>
+                <div class="custom-about"><h2>About Me</h2>
+                    <div class="custom-introduction"><h6>Introduction</h6>
+                    </div>
+                </div> 
+            <p>Hey there! I'm Gen Exus Vergara, a college student in my third year. I'm teaching myself to be really good at programming, making websites, and creating games. I love technology and being creative, so I'm diving into these subjects to learn as much as I can. I'm super motivated to get better at this stuff and hopefully make cool things that people will enjoy. Stick around, and let's see where this journey takes us!</p>
+            <a href="https://github.com/Jajangmyeon01/" class="btn btn-primary">Read More</a>
+        </div>
+        <div class="custom-content">
+            <div class="custom-image-container img">
+                <img src="SNOW_2.jpg" alt="Image" width="350" height="auto">
+            </div>    
+        </div> 
+            </section>
+            
+        <section class="custom-container">
+            <div class="custom-content2">
+                    <div class="custom-title" id="info"><h2>Web Developer/Game Developer</h2>
+                    </div>
+                <p>I became interested in game development when I was around 16 years old, probably because I loved playing games. Back then, 
+                    I thought making games was easy. But as I got older, I realized it takes a lot of hard work and patience. In High school,
+                    I chosed an ICT course because I wanted to make games. I thought that was all I needed to learn, but I discovered there are many other fields in IT that I didn't know about.
+                    For instance, I learned about animations, filters using Adobe software also my first languange was Java. When I entered college,
+                    I realized I needed to expand my skills beyond just game development. That's why I started learning web development. I noticed it's widely used in the IT industry today,
+                    especially with emerging technologies like AI. I know I still have a lot to learn, but they say the first step is always the hardest. 
+                    There's plenty of room and time for improvement. So, I always remind myself that it's never too late to learn.</p>
+                <a href="https://github.com/Jajangmyeon01/" class="btn btn-primary" >Download CV</a>
+            </div>
+            <div class="custom-content2">
+                <div class="custom-image-container2 img">
+                    <img src="SNOW_1.jpg" alt="Image" width="350" height="auto">
+                </div>
+            </div>
+       
+        </section>
+
+        <section class="py-5">
+            <div class="container">
+                <div class="row justify-content-center text-center mb-3">
+                    <div class="col-lg-8 col-xl-7">
+                        <span class="text-muted"><div class="custom-tech" id="skills">Skills:</span></div>
+                        <h6 class="display-6 fw-bold">  Technologies </h6>
+                        <p class="lead">This is the tech stack that I am familiar with.</p>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-xl-3 col-lg-4 col-sm-6 text-center">
+                        <div class="text-muted">
+                            <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/>  </a> 
+                        </div>
+                        <h5 class="mt-3">C#</h5>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 text-center">
+                        <div class="text-muted">
+                            <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> 
+                        </div>
+                        <h5 class="mt-3">HTML</h5>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 text-center">
+                        <div class="text-muted">
+                            <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> 
+                        </div>
+                        <h5 class="mt-3">CSS</h5>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 text-center">
+                        <div class="text-muted">
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> 
+                        </div>
+                        <h5 class="mt-3">Javascript</h5>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 text-center">
+                        <div class="text-muted">
+                            <a href="https://dotnet.microsoft.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/dot-net/dot-net-original-wordmark.svg" alt="dotnet" width="40" height="40"/> </a> 
+                        </div>
+                        <h5 class="mt-3">Microsoft.NET</h5>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 text-center">
+                        <div class="text-muted">
+                            <a href="https://getbootstrap.com/" targe="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png" alt="Bootstrap" width="40" height="40"/> </a> 
+                        </div>
+                        <h5 class="mt-3">Bootstrap</h5>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 text-center">
+                        <div class="text-muted">
+                            <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> 
+                        </div>
+                        <h5 class="mt-3">Java</h5>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 text-center">
+                        <div class="text-muted">
+                            <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> 
+                        </div>
+                        <h5 class="mt-3">MySQL</h5>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 text-center">
+                        <div class="text-muted">
+                            <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> 
+                        </div>
+                        <h5 class="mt-3">Git</h5>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 text-center">
+                        <div class="text-muted">
+                            <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> 
+                        </div>
+                        <h5 class="mt-3">PHP</h5>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 text-center">
+                        <div class="text-muted">
+                            <a href="https://www.blender.org/" target="_blank" rel="noreferrer"> <img src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="blender" width="40" height="40"/> </a> 
+                        </div>
+                        <h5 class="mt-3">Blender</h5>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-sm-6 text-center">
+                        <div class="text-muted">
+                            <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a> 
+                        </div>
+                        <h5 class="mt-3">Unity</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <img src="Fire.gif" alt="fire" class="center">
+
+        <footer class="py-4">
+            <div class="container">
+                <div class="row align-items-center py-4">
+                    <div class="col-12 col-lg-3 text-center text-lg-start mb-3 mb-lg-0">
+                        <img alt="Jajangmyeon Logo" class="img-fluid" height="auto" src="/Portfolio/LOGOHD.png" width="300">
+                    </div>
+                    <div class="col-12 col-lg-6 navbar-expand text-center mb-3 mb-lg-0">
+                        <ul class="list-unstyled d-block d-lg-flex justify-content-center">
+                            <li class="nav-item">
+                                <a class="text-dark text-decoration-none me-lg-3 footer-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="text-dark text-decoration-none me-lg-3 footer-link" href="#info">Information</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="text-dark text-decoration-none me-lg-3 footer-link" href="#skills">Skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="text-dark text-decoration-none me-lg-3 footer-link" href="https://github.com/Jajangmyeon01">Github</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="text-dark text-decoration-none footer-link" href="/Portfolio/Contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-3 small text-center text-lg-end">
+                        <a class="text-muted" href="">English <svg class="bi bi-chevron-down ms-1" fill="currentColor" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" fill-rule="evenodd"></path></svg></a>
+                    </div>
+                </div>
+                <div class="border-top d-lg-none"></div>
+                <div class="text-center py-3">
+                    <a class="me-2" href="https://github.com/Jajangmyeon01/"><svg class="bi bi-github text-primary" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 0C3.582 0 0 3.582 0 8c0 3.54 2.298 6.533 5.47 7.59.4.074.547-.174.547-.386 0-.19-.007-.693-.01-1.36-2.227.484-2.695-1.072-2.695-1.072-.364-.92-.888-1.165-.888-1.165-.725-.495.055-.485.055-.485.803.057 1.224.825 1.224.825.713 1.222 1.87.87 2.327.665.072-.516.277-.87.504-1.072-1.768-.2-3.622-.884-3.622-3.93 0-.867.31-1.578.824-2.134-.09-.2-.36-1.07.07-2.23 0 0 .705-.227 2.3.865.668-.186 1.38-.28 2.095-.283.713.003 1.426.097 2.095.283 1.593-1.092 2.297-.865 2.297-.865.43 1.16.16 2.03.08 2.23.514.556.823 1.267.823 2.134 0 3.054-1.858 3.726-3.634 3.922.286.245.54.73.54 1.475 0 1.064-.01 1.923-.01 2.187 0 .214.144.465.552.386C13.706 14.53 16 11.537 16 8c0-4.418-3.582-8-8-8z"></path></svg></a>
+                    <a class="me-2" href="https://www.instagram.com/clouds_in_the_skiess/"><svg class="bi bi-instagram text-primary" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8 0c2.21 0 2.485.008 3.352.048 1.064.047 1.79.213 2.426.456a5.5 5.5 0 0 1 3.196 3.196c.243.636.41 1.362.456 2.426.04.867.048 1.142.048 3.352s-.008 2.485-.048 3.352c-.046 1.064-.213 1.79-.456 2.426a5.5 5.5 0 0 1-3.196 3.196c-.636.243-1.362.41-2.426.456-.867.04-1.142.048-3.352.048s-2.485-.008-3.352-.048c-1.064-.046-1.79-.213-2.426-.456a5.5 5.5 0 0 1-3.196-3.196c-.243-.636-.41-1.362-.456-2.426C.008 10.485 0 10.21 0 8s.008-2.485.048-3.352c.046-1.064.213-1.79.456-2.426a5.5 5.5 0 0 1 3.196-3.196C5.515.213 6.24.046 7.304.008 8.171.008 8.446 0 8 0zm0 1.188c-.066 0-.133.002-.2.005-.95.042-1.488.19-1.937.33-.48.148-.84.322-1.22.602-.38.38-.454.74-.602 1.22-.14.45-.288.987-.33 1.937-.03.628-.037.843-.037 2.228s.007 1.6.037 2.228c.042.95.19 1.488.33 1.937.148.48.222.84.602 1.22.38.38.74.454 1.22.602.45.14.987.288 1.937.33.628.03.843.037 2.228.037s1.6-.007 2.228-.037c.95-.042 1.488-.19 1.937-.33.48-.148.84-.222 1.22-.602.38-.38.454-.74.602-1.22.14-.45.288-.987.33-1.937.03-.628.037-.843.037-2.228s-.007-1.6-.037-2.228c-.042-.95-.19-1.488-.33-1.937a5.495 5.495 0 0 0-.602-1.22c-.38-.38-.74-.454-1.22-.602-.45-.14-.987-.288-1.937-.33-.628-.03-.843-.037-2.228-.037zm0 2.52a5.287 5.287 0 0 1 2.765.458 5.287 5.287 0 0 1 2.306 1.344 5.287 5.287 0 0 1 1.344 2.306 5.287 5.287 0 0 1 .458 2.765 5.287 5.287 0 0 1-.458 2.765 5.287 5.287 0 0 1-1.344 2.306 5.287 5.287 0 0 1-2.306 1.344 5.287 5.287 0 0 1-2.765.458 5.287 5.287 0 0 1-2.765-.458 5.287 5.287 0 0 1-2.306-1.344 5.287 5.287 0 0 1-1.344-2.306 5.287 5.287 0 0 1-.458-2.765 5.287 5.287 0 0 1 .458-2.765 5.287 5.287 0 0 1 1.344-2.306 5.287 5.287 0 0 1 2.306-1.344 5.287 5.287 0 0 1 2.765-.458zM8 4.63c-.66 0-1.194.534-1.194 1.194s.534 1.194 1.194 1.194c.66 0 1.194-.534 1.194-1.194S8.66 4.63 8 4.63zm0 1.188a.006.006 0 0 0-.006.006c0 .003-.003.006-.006.006a.006.006 0 0 0-.006-.006A.006.006 0 0 0 7.988 5.82c0-.003.003-.006.006-.006a.006.006 0 0 0 .006.006A.006.006 0 0 0 8 5.82zm3.73-.767a.57.57 0 1 0 0-1.138.57.57 0 0 0 0 1.138zm0-1.74a1.17 1.17 0 1 1-2.34 0 1.17 1.17 0 0 1 2.34 0z"></path></svg></a>
+                    <a href="https://www.facebook.com/genexus.vergara/"><svg class="bi bi-facebook text-primary" fill="currentColor" height="20" viewbox="0 0 16 16" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 8.067C16 3.613 12.383 0 8 0S0 3.613 0 8.067C0 12.045 3.523 15.46 8 16v-5.585H5.743V8.067H8V6.38c0-2.197 1.3-3.412 3.315-3.412.947 0 1.897.17 1.897.17v2.09h-1.068c-1.052 0-1.38.65-1.38 1.32v1.587h2.35l-.373 2.348H9.774V16C13.901 15.46 16 12.32 16 8.067z"></path></svg></a>
+                </div>
+                <div class="pt-lg-4 pb-4 pb-lg-3 text-center small">
+                    <p class="mb-0"><a class="d-block d-lg-inline text-muted mx-lg-1 mb-2 mb-lg-0" href="">Privacy Policy</a> <a class="d-block d-lg-inline text-muted mx-lg-1 mb-2 mb-lg-0" href="">Terms of Service</a> <a class="d-block d-lg-inline text-muted mx-lg-1 mb-2 mb-lg-0" href="">Site Map</a></p>
+                    <p class="text-muted mb-0">© 2024 Jajangmyeon. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        
+        
+
+        <!--JS SCRIPT/BOOSTRAP-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script>
+            const darkModeSwitch = document.getElementById('darkModeSwitch');
+        
+            darkModeSwitch.addEventListener('change', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+            window.onload = function () {
+            window.scrollTo(0, 0);
+        }
+        </script>
+    </body>
+</html>
